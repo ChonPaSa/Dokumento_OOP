@@ -1,0 +1,38 @@
+<form action="index.php?action=hochladen2" method="post" enctype="multipart/form-data">
+	<fieldset>
+		<legend>Dokument</legend>
+		<label for="docname">Titel: </label><br />
+		<input class="" type="text" name="docname" value = "{{DOCNAME}}" disabled /><br />
+		<p>Schlachworte auswählen:</p>
+		{{LABELS}}
+ 		<p>Kategorie auswählen:</p>
+		<select name="category" class="half" disabled >
+		 {{CATEGORIES}}
+		</select><br />
+		<label for="contact">Absender / Empfänger: </label>
+		<textarea name="contact" disabled >{{CONTACT}}</textarea><br />		
+		<label for="location">Ablageort: </label>
+		<input type="text" name="location" value ="{{LOCATION}}" disabled /><br />
+		<object data="{{DOCUMENT}}" type="text/plain" width="500">
+				<a href="{{DOCUMENT}}">Vorschau nicht verfügbar</a></object>
+	</fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

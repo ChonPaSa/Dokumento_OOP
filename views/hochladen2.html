@@ -1,0 +1,39 @@
+<form action="index.php?action=hochladen2" method="post" enctype="multipart/form-data">
+	<fieldset>
+		<legend>Dokument Daten Eingeben</legend>
+		<label for="docname">Titel <sup> *</sup>: </label><br />
+		<input class="" type="text" name="docname" value = "" /><br />
+		<p>Schlachworte auswählen:</p>
+		{{LABELS}}
+		<p>Kategorie auswählen:</p>
+		<select name="category" class="half">
+			<option value ="0">--</option>
+			{{CATEGORIES}}
+		</select><br />
+		<label for="contacz">Absender / Empfänger: </label>
+		<textarea name="contact"></textarea><br />		
+		<label for="location">Ablageort: </label>
+		<input type="text" name="location" value ="" /><br />
+	</fieldset>
+	<input type="submit">
+	<input type="reset">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

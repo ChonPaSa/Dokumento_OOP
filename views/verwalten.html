@@ -1,0 +1,28 @@
+
+<table>
+	<tr>
+		<th>Kategorien</th>
+		<th>Aktionen</th>
+	</tr>
+	{{CATEGORIES}}
+	<tr>
+		<form action="?action=verwalten" method="post">
+			<td><input type="text" name="new_cat" placeholder="Neue Kategorie"/></td>
+			<td><button type="submit" name="add_cat"><i class="small far fa-plus-square"></i></button></td>
+		</form>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<th>Schlagworte</th>
+		<th>Aktionen</th>
+	</tr>
+	{{LABELS}}
+	<tr>
+		<form action="?action=verwalten" method="post">
+			<td><input type="text" name="new_lab" placeholder="Neue Schlagworte"/></td>
+			<td><button type="submit" name="add_lab"><i class="small far fa-plus-square"></i></button>		</td>
+		</form>
+	</tr>
+</table>		

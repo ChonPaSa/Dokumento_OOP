@@ -1,0 +1,22 @@
+
+	<form action="?action=suchen" method="post">
+		<tr>
+			<td>{{DOCID}}</td>
+			<td>{{DOCNAME}}</td>
+			<td>{{LABELS}}</td>
+			<td>{{CATEGORIES}}</td>
+			<td>{{CONTACT}}</td>
+			<td>{{LOCATION}}</td>
+			<td>{{TIMESTAMP}}</td>
+			<td>
+				<a href='{{URL}}' title="Zum Dokument..." target="_blank"><i class=" small far fa-file-alt"></i></a>
+				<input type="hidden" value="{{DOCID}}" name="docID" />
+				<button type="submit" name = "bearbeiten" title="Bearbeiten..." >
+					<i class="small far fa-edit"></i> 
+				</button>
+				<button type="submit" name = "loeschen" title="Löschen..." >
+					<i class="small far fa-trash-alt"></i> 
+				</button>
+			</td>
+		</tr>
+	</form>

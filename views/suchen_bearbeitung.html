@@ -1,0 +1,42 @@
+<form action="index.php?action=suchen" method="post" enctype="multipart/form-data">
+	<fieldset>
+		<label for="docname">Titel: <sup>*</sup></label><br />
+		<input class="" type="text" name="docname" value = "{{DOCNAME}}"/><br />
+		<p>Schlachworte auswählen:</p>
+		{{LABELS}}
+ 		<p>Kategorie auswählen:</p>
+		<select name="category" class="half">
+		 {{CATEGORIES}}
+		</select><br />
+		<label for="contact">Absender / Empfänger: </label>
+		<textarea name="contact">{{CONTACT}}</textarea><br />		
+		<label for="location">Ablageort: </label>
+		<input type="text" name="location" value ="{{LOCATION}}" /><br />
+		<label for="timestamp">Date: </label>
+		<input type="date" name="timestamp" value ="{{TIMESTAMP}}" /><br />
+	</fieldset>
+	<input type="hidden" name="docID"  value="{{DOCID}}"/>
+	<input type="submit" name="bearbeitung_speichern" value="Änderungen speichern"><br />
+	<!-- <input type="submit" value="Abbrechen"> <br /> -->
+	<object data="{{DOCUMENT}}" type="text/plain" width="500">
+				<a href="{{DOCUMENT}}">Vorschau nicht verfügbar</a></object>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

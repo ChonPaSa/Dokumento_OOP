@@ -1,0 +1,267 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {								
+	max-width: 100%;
+	height: auto;
+}
+body {
+	font: 16px Arial, sans-serif;
+	background : #f4ebe8;
+	color: #444;
+}
+
+/************Navigation*************************/
+#topmenu {
+	position: fixed;
+	top: 80px;
+	left: -190px;
+	width: 190px;
+	transition: all 1s;
+}
+#topmenu h2 a {
+	display: block;
+	position: absolute;
+	right: -40px;
+	width: 40px;
+	padding-left: 0;
+	text-align: center;
+}
+#topmenu ul {
+	list-style: none;
+}
+#topmenu a {
+	text-decoration: none;
+	color: #f4ebe8;
+	background: rgba(57,147,221, 0.8);
+	display: block;
+	font-weight: bold;
+	padding-left: 20px;
+	line-height: 40px;
+	border-bottom: 1px solid #f4ebe8;
+}
+ 
+#topmenu:target {
+	left:0;
+}
+
+#topmenu h2 a[href="#close"], #topmenu:target h2 a[href="#topmenu"] 
+{
+	display:none;
+}
+
+#topmenu:target h2 a[href="#close"] {
+	display:block;
+}
+
+#topmenu ul li a:hover{
+	background:rgba(32,81,121,0.9);
+	 
+}
+
+
+/**********************Startpage**********/
+
+.landing{
+	position:relative;
+	top: 20%;
+	left:20%;
+	width :80%
+}
+
+/*****************Text*****/
+h1{
+	margin: 5% 2% 2% 2%;
+	text-align: center;
+	color: #3993dd;
+	font-size: 3rem;
+}
+h2{
+	margin: 2%;
+	color: #3993dd;
+}
+main{
+	width:90%;
+	margin: 0 auto;
+	
+}
+
+i{
+	font-size: 4.5rem;
+	color: #3993dd;
+	text-shadow: 4px 4px 2px rgba(150, 146, 150, 1);
+}
+i:hover{
+	text-shadow: 0 0 0;
+}
+i.small{
+	font-size: 2.5rem;
+	color: #3993dd;
+	text-shadow: 0 0 0;
+}
+i.small:hover{
+	color: #49A3ED;
+}
+th i{
+	font-size: 1.5rem;
+	color:#444;	
+}
+a{
+	padding-right: 10px;
+	color: #3993dd;
+}
+a:visited{
+	color: #3993dd;
+}
+
+sup{
+	color: red;
+}
+
+.error{
+	color: #cc0000;
+	font-size: 0.8rem;
+	margin-left: 3%;
+}
+
+/******list******/
+dt{
+	font-weight:bold;
+	color:#3993dd;
+}
+dd{
+	margin: 5px 3%;
+}
+
+/******************Form*******/
+form{
+width:80%;
+/*margin:4% 10%;*/
+}
+
+fieldset{
+	margin: 3% auto;
+	padding-left: 2%;
+}
+
+legend, form label, form p{
+	font-weight: bold;
+	margin: 5px auto;
+}
+
+
+input[type=text], input[type=email], input[type=tel], 
+input[type=file], input[type=password], input[type=date], select, textarea{
+margin-bottom: 5px;
+margin-top: 5px;
+width:99%;
+padding: 5px;
+border:1px solid #3993dd;
+}
+
+input[type=text].errorBox, input[type=email].errorBox, input[type=tel].errorBox, 
+input[type=file].errorBox, input[type=password].errorBox, input[type=date].errorBox, 
+select.errorBox, textarea.errorBox{
+border-color:rgb(255,0,0);
+}
+
+input[type=submit], input[type=reset]{
+margin-bottom: 20px;
+margin-right: 10px;
+padding: 10px;
+border:1px solid #3993dd;
+background-color: #3993dd;
+color: aliceblue;
+font-size:15px;
+cursor:pointer;
+}
+input[type=submit]:hover, input[type=reset]:hover
+{
+background-color: rgb(204,204,204);
+}
+
+input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus
+, input[type=password]:focus, input[type=file]:focus{
+border-color: #4697e4;
+}
+
+input[type=text].half, input[type=password].half, .half{
+	width : 49%;
+}
+
+input[type=text].quarter, input[type=password].quarter, .quarter{
+	width: 24%;
+}
+
+button{
+	border: none;
+	cursor:pointer;
+}
+
+/******************table*****************/
+table{
+	width: 100%;
+	margin-bottom: 4%;
+}
+table, tr, th, td{
+border:1px solid #3993dd;
+
+}
+td{
+	padding: 2px 4px;
+}
+
+th, tfoot{
+	background: rgba(57,147,221, 0.8);
+	padding: 10px;
+}
+tfoot{
+	font-size: 2.5rem;
+	text-align:center;
+}
+table img{
+	width: 100px;http://localhost/PHP/Project2ndMonth/Docs/?action=verwalten
+}
+table button{
+	background-color:transparent;
+}
+
+
+
+
+/* tablet, landscape iPad, lo-res laptops ands desktops******************************** *//* tablet, landscape iPad, lo-res laptops ands desktops******************************** */
+/* tablet, landscape iPad, lo-res laptops ands desktops ********************************/
+/* tablet, landscape iPad, lo-res laptops ands desktops **********************************/
+@media (min-width:801px) { 
+
+
+/******************Navigation big************/
+#topmenu ul a {
+	font-size: 1em;
+	border-bottom: 1px solid rgb(57,147,221);
+}
+#topmenu {
+	width:100%;
+}
+
+#topmenu > ul{
+    background: rgba(57,147,221);
+	width:100%;
+	display: -webkit-box;
+	display:-webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	position:fixed;
+	opacity: 0.8;
+	top:0;
+	left:0;
+}
+ #topmenu h2 a[href="#topmenu"] 
+{
+	display:none;
+}
